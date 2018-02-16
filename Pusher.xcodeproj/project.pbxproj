@@ -13,6 +13,7 @@
 		62DBCB7F20366B4D003CBF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62DBCB7E20366B4D003CBF7E /* Assets.xcassets */; };
 		62DBCB8220366B4D003CBF7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62DBCB8020366B4D003CBF7E /* LaunchScreen.storyboard */; };
 		62DBCB8D20366B4D003CBF7E /* PusherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DBCB8C20366B4D003CBF7E /* PusherTests.swift */; };
+		62DBCB9C20367376003CBF7E /* PusherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DBCB9B20367376003CBF7E /* PusherClient.swift */; };
 		66F2582C71E958E77EF07A3F /* Pods_Pusher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1840E619466CFD658137A8A4 /* Pods_Pusher.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		62DBCB8820366B4D003CBF7E /* PusherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PusherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62DBCB8C20366B4D003CBF7E /* PusherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusherTests.swift; sourceTree = "<group>"; };
 		62DBCB8E20366B4D003CBF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62DBCB9B20367376003CBF7E /* PusherClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusherClient.swift; sourceTree = "<group>"; };
 		F38A23E13FAB18049122F61B /* Pods-Pusher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pusher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pusher/Pods-Pusher.debug.xcconfig"; sourceTree = "<group>"; };
 		FC874664CA43FE9B22A96165 /* Pods-Pusher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pusher.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pusher/Pods-Pusher.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 			children = (
 				62DBCB7720366B4D003CBF7E /* AppDelegate.swift */,
 				62DBCB7920366B4D003CBF7E /* ViewController.swift */,
+				62DBCB9B20367376003CBF7E /* PusherClient.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62DBCB9C20367376003CBF7E /* PusherClient.swift in Sources */,
 				62DBCB7A20366B4D003CBF7E /* ViewController.swift in Sources */,
 				62DBCB7820366B4D003CBF7E /* AppDelegate.swift in Sources */,
 			);
