@@ -19,12 +19,24 @@ final class PusherClient {
         pusher.connect()
     }
 
-    func subscribe(toChannel channelName: String) {
+    func subscribeToChannel(_ channelName: String, listeningForEvent eventName: String,
+                            eventHandler: @escaping (String) -> Void) {
         // subscribe to channel and bind to event
         let channel = pusher.subscribe(channelName)
+
+        channel.bind(eventName: eventName) { (data) in
+            // TODO: Replace with real code
+            guard let data = data as? [String: AnyObject],
+                let message = data["message"] as? String else {
+                    return
+            }
+
+            eventHandler(message)
+        }
     }
 
     func unsubscribe() {
+
         pusher.unsubscribeAll()
     }
 }
