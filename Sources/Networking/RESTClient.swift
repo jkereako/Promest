@@ -1,5 +1,5 @@
 //
-//  NetworkClient.swift
+//  RESTClient.swift
 //  Pusher
 //
 //  Created by Jeff Kereakoglow on 2/16/18.
@@ -10,7 +10,7 @@ import Foundation
 import Promises
 
 /// Represents a request made to an API, however, any HTTP request can be made with this class.
-final class NetworkClient {
+final class RESTClient {
     let session: URLSession
 
     // Allow for dependency injection to make the class testable
@@ -25,14 +25,18 @@ final class NetworkClient {
 
         // Send the request and then attempt to decode the JSON object
         return sendRequest(resource: resource).then { (data) in
-            return Coder().decode(data, to: T.self)
+            guard let responseData = data else {
+                throw NetworkError.emptyResponse
+            }
+
+            return Coder().decode(responseData, to: T.self)
         }
     }
 }
 
 // MARK: - Private helpers
-private extension NetworkClient {
-    func sendRequest(resource: Resource) -> Promise<Data> {
+private extension RESTClient {
+    func sendRequest(resource: Resource) -> Promise<Data?> {
         let url = resource.endpoint.baseURL.appendingPathComponent(resource.endpoint.path)
         let request = NSMutableURLRequest(url: url)
 
@@ -40,7 +44,7 @@ private extension NetworkClient {
         request.httpBody = resource.body
         resource.headers.forEach { request.setValue($1, forHTTPHeaderField: $0) }
 
-        return Promise<Data> { fulfill, reject in
+        return Promise<Data?> { fulfill, reject in
             let task = self.session.dataTask(with: request as URLRequest) { (data: Data?, response: URLResponse?, error: Error?) in
 
                 guard let httpResponse = response as? HTTPURLResponse else {
@@ -51,12 +55,9 @@ private extension NetworkClient {
                 switch httpResponse.statusCode {
                 // Success!
                 case 200...299:
-                    guard let responseData = data else {
-                        reject(NetworkError.noData)
-                        return
-                    }
-
-                    fulfill(responseData)
+                    // `data` may be nil and this is okay if the request was a POST, PUT or DELETE.
+                    // The only time when nil `data` is an error is on a GET request.
+                    fulfill(data)
 
                 // Redirection
                 case 300...399:
