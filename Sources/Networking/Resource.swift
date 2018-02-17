@@ -1,5 +1,5 @@
 //
-//  Resrouce.swift
+//  Resource.swift
 //  Pusher
 //
 //  Created by Jeff Kereakoglow on 2/16/18.

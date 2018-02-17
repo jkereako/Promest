@@ -20,20 +20,17 @@ final class NetworkClient {
         self.baseURL = baseURL
     }
 
-    func get(path: Path) {
+    func get<T: Decodable>(path: Path, decodable: T) -> Promise<T> {
         let resource = Resource(
             path: path, httpMethod: .get, body: nil, headers: [:]
         )
 
-        sendRequest(resource: resource)
-    }
+        let dispatchQueue = DispatchQueue(label: "JSONDecodingQueue")
 
-    func post(path: Path, body: Data) {
-        let resource = Resource(
-            path: path, httpMethod: .post, body: body, headers: [:]
-        )
-
-        sendRequest(resource: resource)
+        // Send the request and then attempt to decode the JSON object
+        return sendRequest(resource: resource).then(on: dispatchQueue) { (data) in
+            return try JSONDecoder().decode(T.self, from: data)
+        }
     }
 }
 
