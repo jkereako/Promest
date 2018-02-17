@@ -54,7 +54,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
         print(IEX.financials(companyName: "aapl", queryItems: queryItems).path)
 
-        let client = RESTClient()
+        let client = RESTClient(urlSession: URLSession.shared)
 
         client.get(endpoint: IEX.company(companyName: "aapl"), decodable: Company.self).then { company in
             print(company.companyName)
