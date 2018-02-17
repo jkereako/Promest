@@ -23,15 +23,20 @@ struct Company: Codable {
 
 enum IEX {
     case company(companyName: String)
-    case financials(companyName: String)
+    case financials(companyName: String, queryItems: [URLQueryItem])
 }
 
 extension IEX: Endpoint {
     var baseURL: URL { return URL(string: "https://api.iextrading.com/1.0")! }
     var path: String {
         switch self {
-        case .company(let companyName): return "/stock/\(companyName)/company"
-        case .financials(let companyName): return "/stock/\(companyName)/financials"
+        case .company(let companyName):
+            return "/stock/\(companyName)/company"
+        case .financials(let companyName, let queryItems):
+
+            let path = "/stock/\(companyName)/financials"
+
+            return buildPath(path, appendingQueryItems: queryItems)
         }
     }
 }
@@ -41,6 +46,13 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func applicationDidFinishLaunching(_ application: UIApplication) {
+        let queryItems = [
+            URLQueryItem(name: "version", value: "3.14.2"),
+            URLQueryItem(name: "country", value: "us"),
+            URLQueryItem(name: "q", value: "Test test 123")
+        ]
+
+        print(IEX.financials(companyName: "aapl", queryItems: queryItems).path)
 
         let client = NetworkClient()
 
