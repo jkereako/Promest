@@ -23,12 +23,9 @@ final class NetworkClient {
             endpoint: endpoint, httpMethod: .get, body: nil, headers: [:]
         )
 
-        let dispatchQueue = DispatchQueue(label: "JSONDecodingQueue")
-
         // Send the request and then attempt to decode the JSON object
-        return sendRequest(resource: resource).then(on: dispatchQueue) { (data) in
-            let decoded = try JSONDecoder().decode(T.self, from: data)
-            return Promise(decoded)
+        return sendRequest(resource: resource).then { (data) in
+            return Coder().decode(data, to: T.self)
         }
     }
 }
