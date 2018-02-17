@@ -12,24 +12,23 @@ import Promises
 /// Represents a request made to an API, however, any HTTP request can be made with this class.
 final class NetworkClient {
     let session: URLSession
-    let baseURL: URL
 
     // Allow for dependency injection to make the class testable
-    init(baseURL: URL, session: URLSession = URLSession.shared) {
+    init(session: URLSession = URLSession.shared) {
         self.session = session
-        self.baseURL = baseURL
     }
 
-    func get<T: Decodable>(path: Path, decodable: T) -> Promise<T> {
+    func get<T: Decodable>(endpoint: Endpoint, decodable: T.Type) -> Promise<T> {
         let resource = Resource(
-            path: path, httpMethod: .get, body: nil, headers: [:]
+            endpoint: endpoint, httpMethod: .get, body: nil, headers: [:]
         )
 
         let dispatchQueue = DispatchQueue(label: "JSONDecodingQueue")
 
         // Send the request and then attempt to decode the JSON object
         return sendRequest(resource: resource).then(on: dispatchQueue) { (data) in
-            return try JSONDecoder().decode(T.self, from: data)
+            let decoded = try JSONDecoder().decode(T.self, from: data)
+            return Promise(decoded)
         }
     }
 }
@@ -37,7 +36,7 @@ final class NetworkClient {
 // MARK: - Private helpers
 private extension NetworkClient {
     func sendRequest(resource: Resource) -> Promise<Data> {
-        let url = baseURL.appendingPathComponent(resource.path.path)
+        let url = resource.endpoint.baseURL.appendingPathComponent(resource.endpoint.path)
         let request = NSMutableURLRequest(url: url)
 
         request.httpMethod = resource.httpMethod.rawValue

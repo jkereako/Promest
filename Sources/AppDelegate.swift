@@ -7,9 +7,45 @@
 //
 
 import UIKit
+import Promises
+
+struct Company: Codable {
+    let symbol: String
+    let companyName: String
+    let exchange: String
+    let industry: String
+    let website: String
+    let description: String
+    //    let ceo: String
+    let issueType: String
+    let sector: String
+}
+
+enum IEX {
+    case company(companyName: String)
+    case financials(companyName: String)
+}
+
+extension IEX: Endpoint {
+    var baseURL: URL { return URL(string: "https://api.iextrading.com/1.0")! }
+    var path: String {
+        switch self {
+        case .company(let companyName): return "/stock/\(companyName)/company"
+        case .financials(let companyName): return "/stock/\(companyName)/financials"
+        }
+    }
+}
 
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-}
 
+    func applicationDidFinishLaunching(_ application: UIApplication) {
+
+        let client = NetworkClient()
+
+        client.get(endpoint: IEX.company(companyName: "aapl"), decodable: Company.self).then { company in
+            print(company.companyName)
+        }
+    }
+}

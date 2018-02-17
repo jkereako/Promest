@@ -9,7 +9,7 @@
 import Foundation
 
 struct Resource {
-    let path: Path
+    let endpoint: Endpoint
     let httpMethod: HTTPMethod
     let body: Data?
     let headers: [String: String]
