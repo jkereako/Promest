@@ -4,7 +4,9 @@ platform :ios, '10.0'
 inhibit_all_warnings!
 use_frameworks!
 
-target 'Promest' do
-  pod 'PromisesSwift'
-end
+abstract_target 'App' do
+    pod 'PromisesSwift'
 
+    target 'Promest'
+    target 'Networking'
+end

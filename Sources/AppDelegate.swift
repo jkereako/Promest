@@ -8,6 +8,7 @@
 
 import UIKit
 import Promises
+import Networking
 
 struct Company: Codable {
     let symbol: String

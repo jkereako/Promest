@@ -10,15 +10,15 @@ import Foundation
 import Promises
 
 /// Represents a request made to an API, however, any HTTP request can be made with this class.
-final class RESTClient: RESTClientType {
+public final class RESTClient: RESTClientType {
     let urlSession: URLSession
 
     // Allow for dependency injection to make the class testable
-    init(urlSession: URLSession) {
+    public init(urlSession: URLSession) {
         self.urlSession = urlSession
     }
 
-    func get<T: Decodable>(endpoint: Endpoint, decodable: T.Type) -> Promise<T> {
+    public func get<T: Decodable>(endpoint: Endpoint, decodable: T.Type) -> Promise<T> {
         let resource = Resource(
             endpoint: endpoint, httpMethod: .get, body: nil, headers: [:]
         )
