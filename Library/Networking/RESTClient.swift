@@ -1,6 +1,6 @@
 //
 //  RESTClient.swift
-//  Pusher
+//  Networking
 //
 //  Created by Jeff Kereakoglow on 2/16/18.
 //  Copyright © 2018 Alexis Digital. All rights reserved.
@@ -11,7 +11,7 @@ import Promises
 
 /// Represents a request made to an API, however, any HTTP request can be made with this class.
 public final class RESTClient: RESTClientType {
-    let urlSession: URLSession
+    public let urlSession: URLSession
 
     // Allow for dependency injection to make the class testable
     public init(urlSession: URLSession) {
