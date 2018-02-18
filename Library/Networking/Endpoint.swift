@@ -25,7 +25,7 @@ extension Endpoint {
         components.queryItems = queryItems
         let urlString = components.string!
 
-        let range = urlString.range(of: components.path)!
+        let range = urlString.range(of: path)!
         let pathWithQueryItems = urlString[range.lowerBound..<urlString.endIndex]
 
         return String(pathWithQueryItems)
