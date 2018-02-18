@@ -9,7 +9,7 @@
 import Foundation
 import Promises
 
-final class Coder {
+final class Coder: CoderType {
     private let dispatchQueue = DispatchQueue(label: "JSONCoderQueue")
 
     /// Asynchronously encodes a contract to JSON data.
