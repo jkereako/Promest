@@ -4,8 +4,7 @@ platform :ios, '10.0'
 inhibit_all_warnings!
 use_frameworks!
 
-target 'Pusher' do
-  pod 'PusherSwift'
+target 'Promest' do
   pod 'PromisesSwift'
 end
 

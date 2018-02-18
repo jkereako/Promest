@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double PusherSwiftVersionNumber;
-FOUNDATION_EXPORT const unsigned char PusherSwiftVersionString[];
+FOUNDATION_EXPORT double Pods_PromestVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_PromestVersionString[];
 

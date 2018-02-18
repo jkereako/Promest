@@ -2,17 +2,14 @@ PODS:
   - PromisesObjC (1.0.2)
   - PromisesSwift (1.0.2):
     - PromisesObjC (= 1.0.2)
-  - PusherSwift (5.1.1)
 
 DEPENDENCIES:
   - PromisesSwift
-  - PusherSwift
 
 SPEC CHECKSUMS:
   PromisesObjC: 5cb99f8b988db9461cd3025cab5cc17752873a5c
   PromisesSwift: a972cb5ca9780fb7f805e9c2d69e7efd417a0523
-  PusherSwift: de9238b6b9faec5275d452e5f43ce9c82b78731e
 
-PODFILE CHECKSUM: 955d0937a542a77b81173fc18b1e71f3c278443d
+PODFILE CHECKSUM: 7187716989f158f5e7d30dd9b04d5610e6c05e3a
 
 COCOAPODS: 1.4.0

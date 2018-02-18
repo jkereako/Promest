@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AB4D92395EEA164A4466BF3 /* Pods_Promest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BCE8F86181E77F32723B298 /* Pods_Promest.framework */; };
 		625D4B3820380AC400FDAF5D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625D4B3720380AC400FDAF5D /* Endpoint.swift */; };
 		6275356E2038DFD400557C6F /* RESTClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275356D2038DFD400557C6F /* RESTClientType.swift */; };
 		6291DC402037E49700ED40D3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6291DC3F2037E49700ED40D3 /* HTTPMethod.swift */; };
@@ -20,9 +21,7 @@
 		62DBCB7F20366B4D003CBF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62DBCB7E20366B4D003CBF7E /* Assets.xcassets */; };
 		62DBCB8220366B4D003CBF7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62DBCB8020366B4D003CBF7E /* LaunchScreen.storyboard */; };
 		62DBCB8D20366B4D003CBF7E /* PusherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DBCB8C20366B4D003CBF7E /* PusherTests.swift */; };
-		62DBCB9C20367376003CBF7E /* PusherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DBCB9B20367376003CBF7E /* PusherClient.swift */; };
 		62E7A87F2038733700503FC9 /* Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E7A87E2038733700503FC9 /* Coder.swift */; };
-		66F2582C71E958E77EF07A3F /* Pods_Pusher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1840E619466CFD658137A8A4 /* Pods_Pusher.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1840E619466CFD658137A8A4 /* Pods_Pusher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pusher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A4D2CB451EDC990851DC537 /* Pods-Promest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Promest/Pods-Promest.release.xcconfig"; sourceTree = "<group>"; };
+		2BCE8F86181E77F32723B298 /* Pods_Promest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Promest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47A16F5B3948640FA8160EFA /* Pods-Promest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Promest/Pods-Promest.debug.xcconfig"; sourceTree = "<group>"; };
 		625D4B3720380AC400FDAF5D /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		6275356D2038DFD400557C6F /* RESTClientType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTClientType.swift; sourceTree = "<group>"; };
 		6291DC3F2037E49700ED40D3 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -44,20 +45,17 @@
 		6291DC432037E62900ED40D3 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		6291DC472037E91600ED40D3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		62BD1EC420391F0400341E9F /* CoderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoderType.swift; sourceTree = "<group>"; };
-		62DBCB7420366B4D003CBF7E /* Pusher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pusher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62DBCB7420366B4D003CBF7E /* Promest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Promest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62DBCB7720366B4D003CBF7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62DBCB7920366B4D003CBF7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		62DBCB7C20366B4D003CBF7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62DBCB7E20366B4D003CBF7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62DBCB8120366B4D003CBF7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62DBCB8320366B4D003CBF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62DBCB8820366B4D003CBF7E /* PusherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PusherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62DBCB8820366B4D003CBF7E /* PromestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PromestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62DBCB8C20366B4D003CBF7E /* PusherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusherTests.swift; sourceTree = "<group>"; };
 		62DBCB8E20366B4D003CBF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62DBCB9B20367376003CBF7E /* PusherClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusherClient.swift; sourceTree = "<group>"; };
 		62E7A87E2038733700503FC9 /* Coder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coder.swift; sourceTree = "<group>"; };
-		F38A23E13FAB18049122F61B /* Pods-Pusher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pusher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pusher/Pods-Pusher.debug.xcconfig"; sourceTree = "<group>"; };
-		FC874664CA43FE9B22A96165 /* Pods-Pusher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pusher.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pusher/Pods-Pusher.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66F2582C71E958E77EF07A3F /* Pods_Pusher.framework in Frameworks */,
+				1AB4D92395EEA164A4466BF3 /* Pods_Promest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44BE9C7E8C7ECF6C63204D0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47A16F5B3948640FA8160EFA /* Pods-Promest.debug.xcconfig */,
+				0A4D2CB451EDC990851DC537 /* Pods-Promest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6251588C20387B39006A8B11 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,16 +117,16 @@
 				62DBCB9720366BB4003CBF7E /* Resources */,
 				62DBCB7620366B4D003CBF7E /* Sources */,
 				62DBCB7520366B4D003CBF7E /* Products */,
-				71AB22AECB47A063E4701E6C /* Pods */,
-				8C3F5859566B230AF5BB5B50 /* Frameworks */,
+				44BE9C7E8C7ECF6C63204D0D /* Pods */,
+				81B667F79A5CAB9EE172B42A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		62DBCB7520366B4D003CBF7E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				62DBCB7420366B4D003CBF7E /* Pusher.app */,
-				62DBCB8820366B4D003CBF7E /* PusherTests.xctest */,
+				62DBCB7420366B4D003CBF7E /* Promest.app */,
+				62DBCB8820366B4D003CBF7E /* PromestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,7 +137,6 @@
 				625D4B362037F9EB00FDAF5D /* Networking */,
 				62DBCB7720366B4D003CBF7E /* AppDelegate.swift */,
 				62DBCB7920366B4D003CBF7E /* ViewController.swift */,
-				62DBCB9B20367376003CBF7E /* PusherClient.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -170,19 +176,10 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		71AB22AECB47A063E4701E6C /* Pods */ = {
+		81B667F79A5CAB9EE172B42A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F38A23E13FAB18049122F61B /* Pods-Pusher.debug.xcconfig */,
-				FC874664CA43FE9B22A96165 /* Pods-Pusher.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		8C3F5859566B230AF5BB5B50 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1840E619466CFD658137A8A4 /* Pods_Pusher.framework */,
+				2BCE8F86181E77F32723B298 /* Pods_Promest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,29 +187,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		62DBCB7320366B4D003CBF7E /* Pusher */ = {
+		62DBCB7320366B4D003CBF7E /* Promest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 62DBCB9120366B4D003CBF7E /* Build configuration list for PBXNativeTarget "Pusher" */;
+			buildConfigurationList = 62DBCB9120366B4D003CBF7E /* Build configuration list for PBXNativeTarget "Promest" */;
 			buildPhases = (
-				F00261061A0E08F1281FF063 /* [CP] Check Pods Manifest.lock */,
+				B4D4369C9D04C50CB0B532C6 /* [CP] Check Pods Manifest.lock */,
 				62DBCB7020366B4D003CBF7E /* Sources */,
 				62DBCB7120366B4D003CBF7E /* Frameworks */,
 				62DBCB7220366B4D003CBF7E /* Resources */,
-				018BD789F447191E3F2D31E5 /* [CP] Embed Pods Frameworks */,
-				553ABD9F5EBC45FC6ABDA946 /* [CP] Copy Pods Resources */,
+				A1EFC9FBD97C1F99ADC6DFC7 /* [CP] Embed Pods Frameworks */,
+				B48E2925494B7F638860C910 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Pusher;
+			name = Promest;
 			productName = Pusher;
-			productReference = 62DBCB7420366B4D003CBF7E /* Pusher.app */;
+			productReference = 62DBCB7420366B4D003CBF7E /* Promest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		62DBCB8720366B4D003CBF7E /* PusherTests */ = {
+		62DBCB8720366B4D003CBF7E /* PromestTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 62DBCB9420366B4D003CBF7E /* Build configuration list for PBXNativeTarget "PusherTests" */;
+			buildConfigurationList = 62DBCB9420366B4D003CBF7E /* Build configuration list for PBXNativeTarget "PromestTests" */;
 			buildPhases = (
 				62DBCB8420366B4D003CBF7E /* Sources */,
 				62DBCB8520366B4D003CBF7E /* Frameworks */,
@@ -223,9 +220,9 @@
 			dependencies = (
 				62DBCB8A20366B4D003CBF7E /* PBXTargetDependency */,
 			);
-			name = PusherTests;
+			name = PromestTests;
 			productName = PusherTests;
-			productReference = 62DBCB8820366B4D003CBF7E /* PusherTests.xctest */;
+			productReference = 62DBCB8820366B4D003CBF7E /* PromestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -234,6 +231,7 @@
 		62DBCB6C20366B4D003CBF7E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AD;
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Alexis Digital";
@@ -249,7 +247,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 62DBCB6F20366B4D003CBF7E /* Build configuration list for PBXProject "Pusher" */;
+			buildConfigurationList = 62DBCB6F20366B4D003CBF7E /* Build configuration list for PBXProject "Promest" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -262,8 +260,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				62DBCB7320366B4D003CBF7E /* Pusher */,
-				62DBCB8720366B4D003CBF7E /* PusherTests */,
+				62DBCB7320366B4D003CBF7E /* Promest */,
+				62DBCB8720366B4D003CBF7E /* PromestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -289,29 +287,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		018BD789F447191E3F2D31E5 /* [CP] Embed Pods Frameworks */ = {
+		A1EFC9FBD97C1F99ADC6DFC7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Pusher/Pods-Pusher-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Promest/Pods-Promest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework",
-				"${BUILT_PRODUCTS_DIR}/PusherSwift/PusherSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PusherSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pusher/Pods-Pusher-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Promest/Pods-Promest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		553ABD9F5EBC45FC6ABDA946 /* [CP] Copy Pods Resources */ = {
+		B48E2925494B7F638860C910 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,10 +319,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pusher/Pods-Pusher-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Promest/Pods-Promest-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F00261061A0E08F1281FF063 /* [CP] Check Pods Manifest.lock */ = {
+		B4D4369C9D04C50CB0B532C6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -337,7 +333,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Pusher-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Promest-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -357,7 +353,6 @@
 				6291DC442037E62900ED40D3 /* Resource.swift in Sources */,
 				62E7A87F2038733700503FC9 /* Coder.swift in Sources */,
 				6291DC422037E51D00ED40D3 /* RESTClient.swift in Sources */,
-				62DBCB9C20367376003CBF7E /* PusherClient.swift in Sources */,
 				62DBCB7A20366B4D003CBF7E /* ViewController.swift in Sources */,
 				6275356E2038DFD400557C6F /* RESTClientType.swift in Sources */,
 				62DBCB7820366B4D003CBF7E /* AppDelegate.swift in Sources */,
@@ -378,7 +373,7 @@
 /* Begin PBXTargetDependency section */
 		62DBCB8A20366B4D003CBF7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 62DBCB7320366B4D003CBF7E /* Pusher */;
+			target = 62DBCB7320366B4D003CBF7E /* Promest */;
 			targetProxy = 62DBCB8920366B4D003CBF7E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -512,7 +507,7 @@
 		};
 		62DBCB9220366B4D003CBF7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F38A23E13FAB18049122F61B /* Pods-Pusher.debug.xcconfig */;
+			baseConfigurationReference = 47A16F5B3948640FA8160EFA /* Pods-Promest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,7 +523,7 @@
 		};
 		62DBCB9320366B4D003CBF7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC874664CA43FE9B22A96165 /* Pods-Pusher.release.xcconfig */;
+			baseConfigurationReference = 0A4D2CB451EDC990851DC537 /* Pods-Promest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -554,7 +549,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pusher.app/Pusher";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Promest.app/Promest";
 			};
 			name = Debug;
 		};
@@ -570,14 +565,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pusher.app/Pusher";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Promest.app/Promest";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		62DBCB6F20366B4D003CBF7E /* Build configuration list for PBXProject "Pusher" */ = {
+		62DBCB6F20366B4D003CBF7E /* Build configuration list for PBXProject "Promest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				62DBCB8F20366B4D003CBF7E /* Debug */,
@@ -586,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		62DBCB9120366B4D003CBF7E /* Build configuration list for PBXNativeTarget "Pusher" */ = {
+		62DBCB9120366B4D003CBF7E /* Build configuration list for PBXNativeTarget "Promest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				62DBCB9220366B4D003CBF7E /* Debug */,
@@ -595,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		62DBCB9420366B4D003CBF7E /* Build configuration list for PBXNativeTarget "PusherTests" */ = {
+		62DBCB9420366B4D003CBF7E /* Build configuration list for PBXNativeTarget "PromestTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				62DBCB9520366B4D003CBF7E /* Debug */,

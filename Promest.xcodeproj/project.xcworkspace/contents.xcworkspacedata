@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Pusher.xcodeproj">
+      location = "self:/Users/jkereako/src/swift/Pusher/Promest.xcodeproj">
    </FileRef>
 </Workspace>
