@@ -16,7 +16,7 @@ final class MockRESTClient: RESTClientType {
 
     init(urlSession: URLSessionType) {
         self.urlSession = urlSession
-        data = Data()
+        jsonData = Data()
     }
 
     init(urlSession: URLSessionType, jsonData: Data) {
