@@ -11,12 +11,12 @@ import Promises
 
 /// Represents a request made to an API, however, any HTTP request can be made with this class.
 public final class RESTClient: RESTClientType {
-    public let urlSession: URLSession
+    public var urlSession: URLSessionType
 
     fileprivate let headers: [String: String]
 
     // Allow for dependency injection to make the class testable
-    public init(urlSession: URLSession, headers: [String: String] = [:]) {
+    public init(urlSession: URLSessionType, headers: [String: String] = [:]) {
         self.urlSession = urlSession
         self.headers = headers
     }
@@ -85,7 +85,7 @@ private extension RESTClient {
         resource.headers.forEach { request.setValue($1, forHTTPHeaderField: $0) }
 
         return Promise<Data?> { fulfill, reject in
-            let task = self.urlSession.dataTask(with: request as URLRequest) { (data: Data?, response: URLResponse?, error: Error?) in
+            let task = self.urlSession.task(with: request as URLRequest) { (data: Data?, response: URLResponse?, error: Error?) in
 
                 guard let httpResponse = response as? HTTPURLResponse else {
                     reject(NetworkError.emptyResponse)

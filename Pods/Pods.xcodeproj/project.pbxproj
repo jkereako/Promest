@@ -32,7 +32,7 @@
 		4356824292C6FD3F72F12BB20FDAA606 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4F71A58DF6411C254646DE1566F96E /* Foundation.framework */; };
 		469BA46EC81DA81CC017738C7D88C619 /* FBLPromise+Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = 4455C80345ADAD7334A2ECE0CA89F834 /* FBLPromise+Testing.h */; };
 		48677488D821D9F30AB8A622AB4ABC10 /* Promise+Recover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BC80142A06240AA58E36BE6CBF0B73 /* Promise+Recover.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4A26246F888A4DED624929EFB463B9BE /* Pods-App-Networking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91B8271F71E658843496C2DD9C595FC4 /* Pods-App-Networking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A26246F888A4DED624929EFB463B9BE /* Pods-App-Networking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 998390C936822C8F53C7D51B3A754332 /* Pods-App-Networking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AEA3BA67F70E31D7CE7DC35D557140C /* FBLPromise+Timeout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9836B890DE21850C11B551BC8A7612D2 /* FBLPromise+Timeout.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4C3E736837B6CDAE8CD1B55B77EC02D3 /* FBLPromise+Do.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A70FEAF57464B10E940BDF4E3AA401 /* FBLPromise+Do.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5253E6AE15D889D5CA68E5B717584A49 /* FBLPromise+Catch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D430A841C8D3E9425ACF47514F9DD3B /* FBLPromise+Catch.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -48,7 +48,7 @@
 		61F97425925BA9FA09B867349A72A064 /* FBLPromise+Resolve.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9C848422D0FA5771321E9FB3F272CF /* FBLPromise+Resolve.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		63664338EE258D70883D7BAAD354458D /* Promise+Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F5BA6875914474F13C12FDACF5967 /* Promise+Testing.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6A1299751F9B5FD10E4A628374A52C30 /* FBLPromise+Always.h in Headers */ = {isa = PBXBuildFile; fileRef = 34FF0F390AE0E6DEB97371B27EDB858A /* FBLPromise+Always.h */; };
-		72117BAE3D770791DE68FE3C4F3FDCB4 /* Pods-App-Promest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7557ADAC87ADA1319399079B2EDEE984 /* Pods-App-Promest-dummy.m */; };
+		72117BAE3D770791DE68FE3C4F3FDCB4 /* Pods-App-Promest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE959E00E366E8207042710F9EDD861 /* Pods-App-Promest-dummy.m */; };
 		72E0FB5133847AEEE32AFBC5963480D9 /* PromisesSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B39C83DA1981009FD8E57929EC1259A /* PromisesSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74C5026F7DE6142AC384697145F0DED9 /* FBLPromises.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 827CFCBA1F1FD5432CC45E8F7A75501F /* FBLPromises.h */; };
 		7605F633D8AE1A1AA8A4814951089A8C /* FBLPromise+Recover.h in Headers */ = {isa = PBXBuildFile; fileRef = C74A65631D4D8236C42426D329B9A276 /* FBLPromise+Recover.h */; };
@@ -68,18 +68,21 @@
 		A430C7580A9089E979008980D2E814AF /* FBLPromise+Do.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F220E34A5ACCF0A99B74CCFB0E0AC3D /* FBLPromise+Do.h */; };
 		AC9B069D831A211E3D299EB67E667B25 /* Promise+Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86288AE2F55BE99ECB62D92EFDB280 /* Promise+Validate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		ACEC00E8282E439E5C78F007B1B13E55 /* Promise+Always.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE51C156F6EA8EA77BDCE7F953ED7474 /* Promise+Always.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		AE70CE054A8DA7FAE3D8B96B4E391B12 /* Pods-App-Promest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E131E3D55789C64B2F78B39AEEED943 /* Pods-App-Promest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE70CE054A8DA7FAE3D8B96B4E391B12 /* Pods-App-Promest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E990110622937473869787053D70B061 /* Pods-App-Promest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2C4EAFD741B78849DECE8DC4B7A5661 /* FBLPromise+Timeout.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 505D34746D9ADFD903B3E939435D4E71 /* FBLPromise+Timeout.h */; };
 		B7FF81639C4153FE5C7FB5CD87E1BAFC /* Promise+Timeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADE9F144DA7AD3A174DCB3F4AB02487 /* Promise+Timeout.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BC4ED58EDAA77E6B2977A223A4183786 /* FBLPromise+Resolve.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 6BA63600D0547DE72879E38A8A2A747D /* FBLPromise+Resolve.h */; };
 		BD54C84696F95A1CFC96342F7A8DB87F /* FBLPromise+Then.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE52749F4E8410D84AD8A7E8292BBD7 /* FBLPromise+Then.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BEC3DD046BDDEC422E2BECDF4896AA20 /* Promise+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E12E4691126DB8C711953DD992AC7C4 /* Promise+Async.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C19E5470F0C26A83AE5E3BB399E1675C /* FBLPromise+When.m in Sources */ = {isa = PBXBuildFile; fileRef = 751CD2C7DAC9C8B94A0AA0CB55634B82 /* FBLPromise+When.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D2641D623EBF3428C62F6E4EFDE24187 /* Pods-App-NetworkingTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 068E68D242158EA54DFABF03958CC891 /* Pods-App-NetworkingTests-dummy.m */; };
 		D55AC38952198B2EC578EF1AB64DAF85 /* FBLPromise.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 0D60562BC54DDF5C7E1DD9EA875671E9 /* FBLPromise.h */; };
 		DBBC854D5569179340106F3EE6ED8528 /* FBLPromise+Then.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 0D3296C3DCFA9C4F3311F66B9ED1465B /* FBLPromise+Then.h */; };
 		DBCEDA4C47E3DCF4F621FCC2CA963A29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4F71A58DF6411C254646DE1566F96E /* Foundation.framework */; };
 		DF23C344F0E288FB2E49143079F7B00E /* Promise+Do.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35C2E3032C541777577E62ED45F2BD /* Promise+Do.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		E81F6186B8FFD761050A62C540251E14 /* Pods-App-Networking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC914B574E942BD2A37AC93AAA51B5F9 /* Pods-App-Networking-dummy.m */; };
+		E81F6186B8FFD761050A62C540251E14 /* Pods-App-Networking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE56C8900466B90A0AAF750AF0BCBA4 /* Pods-App-Networking-dummy.m */; };
+		ECA6C36037484147895D1C9597B2AF59 /* Pods-App-NetworkingTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A298FA2ED0B3AE9DA70D0BD65964661 /* Pods-App-NetworkingTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEA251045AACECE1BDD4BB3568FC6DFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4F71A58DF6411C254646DE1566F96E /* Foundation.framework */; };
 		F38B05050A04A50892B5ED5CF7BB1CD4 /* FBLPromise+Do.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 1F220E34A5ACCF0A99B74CCFB0E0AC3D /* FBLPromise+Do.h */; };
 		F4FBDFE3BD95C716BFA45912D2A035A6 /* FBLPromise+Catch.h in Headers */ = {isa = PBXBuildFile; fileRef = BCBDA93C4147B23FD053D46BD85E4B07 /* FBLPromise+Catch.h */; };
 		F9BFE90C5CB5AC0C9794E1C6024E596B /* FBLPromise+When.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = C6FD9841782EA72C20AE6AD3632EE10A /* FBLPromise+When.h */; };
@@ -87,6 +90,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		39656BDFD50B91D9BCDEB201562C55BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFAD2EB6CDC42955E43C7CD6F61A409D;
+			remoteInfo = PromisesObjC;
+		};
 		6CDCFA84200C0DDE02CBD2D1F30028F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -114,6 +124,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = EFAD2EB6CDC42955E43C7CD6F61A409D;
 			remoteInfo = PromisesObjC;
+		};
+		EAEC1ED618CFAAAC53CDCBAA31F75AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CF768D8CC6AAC8A598F9392CD0CE5C7;
+			remoteInfo = PromisesSwift;
 		};
 		F1355D7BFC7D0CE0D368737F85370A41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -165,90 +182,101 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		021B8975D6B0AB38F57BCFC0FD0B476F /* Promises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Promises.framework; path = PromisesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0267F4F62397ABD0D8260BC7B191B730 /* FBLPromiseError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBLPromiseError.m; path = Sources/FBLPromises/FBLPromiseError.m; sourceTree = "<group>"; };
+		066E3DD143F13126ED374E156845F4E6 /* Pods-App-Promest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-App-Promest.modulemap"; sourceTree = "<group>"; };
+		068E68D242158EA54DFABF03958CC891 /* Pods-App-NetworkingTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-App-NetworkingTests-dummy.m"; sourceTree = "<group>"; };
 		06C7C0B38FB99C20AC35F6D56F1CEC6C /* Promise+All.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+All.swift"; path = "Sources/Promises/Promise+All.swift"; sourceTree = "<group>"; };
 		0D3296C3DCFA9C4F3311F66B9ED1465B /* FBLPromise+Then.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Then.h"; path = "Sources/FBLPromises/include/FBLPromise+Then.h"; sourceTree = "<group>"; };
 		0D344114EA101EFFE94E0FC603014919 /* FBLPromise+Any.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Any.m"; path = "Sources/FBLPromises/FBLPromise+Any.m"; sourceTree = "<group>"; };
 		0D60562BC54DDF5C7E1DD9EA875671E9 /* FBLPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromise.h; path = Sources/FBLPromises/include/FBLPromise.h; sourceTree = "<group>"; };
+		0DE959E00E366E8207042710F9EDD861 /* Pods-App-Promest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-App-Promest-dummy.m"; sourceTree = "<group>"; };
+		0ECC8F4337D49E303BADF7DB77930256 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16A18D5FB63AD9E458F0711F3FF9A087 /* Pods-App-NetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-App-NetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
+		1906E46DD66E354E5B8AF9B0703A5AAA /* Pods_App_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_App_Networking.framework; path = "Pods-App-Networking.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4BFA272692CC030EB0643EF2EACBBB /* FBLPromisePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromisePrivate.h; path = Sources/FBLPromises/include/FBLPromisePrivate.h; sourceTree = "<group>"; };
+		1B4472DFDFD6B33CA6E31A9B242E70C9 /* Pods-App-Networking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-App-Networking.debug.xcconfig"; sourceTree = "<group>"; };
 		1D430A841C8D3E9425ACF47514F9DD3B /* FBLPromise+Catch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Catch.m"; path = "Sources/FBLPromises/FBLPromise+Catch.m"; sourceTree = "<group>"; };
 		1F220E34A5ACCF0A99B74CCFB0E0AC3D /* FBLPromise+Do.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Do.h"; path = "Sources/FBLPromises/include/FBLPromise+Do.h"; sourceTree = "<group>"; };
 		1FE6892C22315236E1AF9E517C3BC970 /* PromisesObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PromisesObjC.modulemap; sourceTree = "<group>"; };
-		22592DB82DE5699E7BD7472175B26CB4 /* Pods_App_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_App_Networking.framework; path = "Pods-App-Networking.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2791580C9C0DF94D9BDA3CD829FCDF7A /* Pods-App-Promest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-App-Promest.debug.xcconfig"; sourceTree = "<group>"; };
 		29BC80142A06240AA58E36BE6CBF0B73 /* Promise+Recover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Recover.swift"; path = "Sources/Promises/Promise+Recover.swift"; sourceTree = "<group>"; };
 		2A679F5630BBED3A7B1BF03BEBD456C3 /* FBLPromise+Any.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Any.h"; path = "Sources/FBLPromises/include/FBLPromise+Any.h"; sourceTree = "<group>"; };
-		31F0FF441A11BBF95E347537BE23F65D /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBLPromises.framework; path = PromisesObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32310EC4EBD43425665C86C361FCE28E /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Promises/Promise.swift; sourceTree = "<group>"; };
 		34FF0F390AE0E6DEB97371B27EDB858A /* FBLPromise+Always.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Always.h"; path = "Sources/FBLPromises/include/FBLPromise+Always.h"; sourceTree = "<group>"; };
 		3B39C83DA1981009FD8E57929EC1259A /* PromisesSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromisesSwift-umbrella.h"; sourceTree = "<group>"; };
-		3B7328C881651D867189B01C0ADBE282 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BC9078273D24AE46E5BD3E3148EE356 /* Pods-App-Promest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-App-Promest.modulemap"; sourceTree = "<group>"; };
 		3C23344B9C6A38545B96D82470F81920 /* FBLPromise+Async.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Async.m"; path = "Sources/FBLPromises/FBLPromise+Async.m"; sourceTree = "<group>"; };
-		3E131E3D55789C64B2F78B39AEEED943 /* Pods-App-Promest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-App-Promest-umbrella.h"; sourceTree = "<group>"; };
 		416E1360CEFD71BBA808190A38830F21 /* PromisesSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromisesSwift-prefix.pch"; sourceTree = "<group>"; };
 		4455C80345ADAD7334A2ECE0CA89F834 /* FBLPromise+Testing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Testing.h"; path = "Sources/FBLPromises/include/FBLPromise+Testing.h"; sourceTree = "<group>"; };
+		458BE301534EA45ACEB584BDCC867973 /* Pods-App-NetworkingTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-App-NetworkingTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		48B99F73230CB06BDCA57683CC646D0E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AE5AFE70948CC606EB62F358E1CF565 /* PromisesObjC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromisesObjC-umbrella.h"; sourceTree = "<group>"; };
+		4BAA1C0009445B2C85B9C36630C7F8FF /* Pods-App-NetworkingTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-App-NetworkingTests-resources.sh"; sourceTree = "<group>"; };
 		4D2C5E1BA6381C230432D94F988958E8 /* Promise+When.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+When.swift"; path = "Sources/Promises/Promise+When.swift"; sourceTree = "<group>"; };
+		4F6D3ADB6A1447019818E60A3D3EB2CC /* Pods-App-Networking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-App-Networking.modulemap"; sourceTree = "<group>"; };
 		4F9CF893DC18BA1219625EBCD0C937DC /* FBLPromise+Recover.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Recover.m"; path = "Sources/FBLPromises/FBLPromise+Recover.m"; sourceTree = "<group>"; };
 		505D34746D9ADFD903B3E939435D4E71 /* FBLPromise+Timeout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Timeout.h"; path = "Sources/FBLPromises/include/FBLPromise+Timeout.h"; sourceTree = "<group>"; };
 		535818A7D056B791217D034B1B46A802 /* PromisesSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromisesSwift.xcconfig; sourceTree = "<group>"; };
 		54F08C18FEBE4959A18D2C5CD534DAD4 /* PromisesSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PromisesSwift.modulemap; sourceTree = "<group>"; };
-		58BD7206ACD66A2FE8477D7BE6C19A45 /* Pods-App-Networking-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-App-Networking-resources.sh"; sourceTree = "<group>"; };
-		5A646ECF34A288DC46D27512BEA1ABD1 /* Pods_App_Promest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_App_Promest.framework; path = "Pods-App-Promest.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A18BC63EB325C8F6B04F93596B87FF /* Pods_App_NetworkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_App_NetworkingTests.framework; path = "Pods-App-NetworkingTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		572CDFB22F62D5ECD0B5FD02F4747C19 /* Pods-App-Networking-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-App-Networking-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5A790F15B7AF7ED520EED1EE0614220E /* FBLPromise+All.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+All.h"; path = "Sources/FBLPromises/include/FBLPromise+All.h"; sourceTree = "<group>"; };
 		5B35C2E3032C541777577E62ED45F2BD /* Promise+Do.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Do.swift"; path = "Sources/Promises/Promise+Do.swift"; sourceTree = "<group>"; };
-		621EF34313F75DF4725DCE27EA271541 /* Pods-App-Promest-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-App-Promest-frameworks.sh"; sourceTree = "<group>"; };
 		65504C2D08C2E85CA8D6024D130EF5C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		662E70741E9305F3DD8592EFEA393D8E /* Pods-App-Promest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-App-Promest-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6ADE9F144DA7AD3A174DCB3F4AB02487 /* Promise+Timeout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Timeout.swift"; path = "Sources/Promises/Promise+Timeout.swift"; sourceTree = "<group>"; };
 		6BA63600D0547DE72879E38A8A2A747D /* FBLPromise+Resolve.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Resolve.h"; path = "Sources/FBLPromises/include/FBLPromise+Resolve.h"; sourceTree = "<group>"; };
 		6D385EFB575C82502F66521EBDB31907 /* FBLPromise+Always.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Always.m"; path = "Sources/FBLPromises/FBLPromise+Always.m"; sourceTree = "<group>"; };
 		6FE52749F4E8410D84AD8A7E8292BBD7 /* FBLPromise+Then.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Then.m"; path = "Sources/FBLPromises/FBLPromise+Then.m"; sourceTree = "<group>"; };
 		73C556E35AB3E03E25D873FDB8E53E0E /* FBLPromise+Testing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Testing.m"; path = "Sources/FBLPromises/FBLPromise+Testing.m"; sourceTree = "<group>"; };
-		75039E355E476B0C8D27A7EC1F867BE5 /* Pods-App-Promest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-App-Promest-acknowledgements.markdown"; sourceTree = "<group>"; };
 		751CD2C7DAC9C8B94A0AA0CB55634B82 /* FBLPromise+When.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+When.m"; path = "Sources/FBLPromises/FBLPromise+When.m"; sourceTree = "<group>"; };
-		7557ADAC87ADA1319399079B2EDEE984 /* Pods-App-Promest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-App-Promest-dummy.m"; sourceTree = "<group>"; };
+		760BEED681B0C25D4B69386EA713F010 /* Pods-App-NetworkingTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-App-NetworkingTests.modulemap"; sourceTree = "<group>"; };
 		7DEDBE30758988CB4B98645DECD0F8AC /* Promise+Any.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Any.swift"; path = "Sources/Promises/Promise+Any.swift"; sourceTree = "<group>"; };
 		7E12E4691126DB8C711953DD992AC7C4 /* Promise+Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Async.swift"; path = "Sources/Promises/Promise+Async.swift"; sourceTree = "<group>"; };
 		7F1F5BA6875914474F13C12FDACF5967 /* Promise+Testing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Testing.swift"; path = "Sources/Promises/Promise+Testing.swift"; sourceTree = "<group>"; };
+		81B22002F0C46CBEB7E8C4CBB9C3AD06 /* Pods-App-Networking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-App-Networking.release.xcconfig"; sourceTree = "<group>"; };
 		827CFCBA1F1FD5432CC45E8F7A75501F /* FBLPromises.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromises.h; path = Sources/FBLPromises/include/FBLPromises.h; sourceTree = "<group>"; };
+		859964D5AB0D80FE063391184C10F92E /* Pods-App-Promest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-App-Promest.release.xcconfig"; sourceTree = "<group>"; };
+		8A298FA2ED0B3AE9DA70D0BD65964661 /* Pods-App-NetworkingTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-App-NetworkingTests-umbrella.h"; sourceTree = "<group>"; };
 		8B5D95876CA7076BE4C31E0E151B02F8 /* FBLPromise+All.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+All.m"; path = "Sources/FBLPromises/FBLPromise+All.m"; sourceTree = "<group>"; };
 		8CC295118AA91E8AED6D886264B59EEC /* PromisesObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromisesObjC-dummy.m"; sourceTree = "<group>"; };
-		91B8271F71E658843496C2DD9C595FC4 /* Pods-App-Networking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-App-Networking-umbrella.h"; sourceTree = "<group>"; };
+		8CC8F164882FDB9A520C1C254873886E /* Pods-App-NetworkingTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-App-NetworkingTests-frameworks.sh"; sourceTree = "<group>"; };
+		8D1EFE0668C82E2A8B503B12B00B51DB /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBLPromises.framework; path = PromisesObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95E9C4893CFB1412EC0B4BF5927E416B /* Pods-App-Networking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-App-Networking.release.xcconfig"; sourceTree = "<group>"; };
 		9836B890DE21850C11B551BC8A7612D2 /* FBLPromise+Timeout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Timeout.m"; path = "Sources/FBLPromises/FBLPromise+Timeout.m"; sourceTree = "<group>"; };
-		992B8E9F450E3EFB62C7E7F0F2140531 /* Pods-App-Promest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-App-Promest-resources.sh"; sourceTree = "<group>"; };
-		A6BFE201D0E45C598EF322BBF9F281D9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		998390C936822C8F53C7D51B3A754332 /* Pods-App-Networking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-App-Networking-umbrella.h"; sourceTree = "<group>"; };
+		9E902A89452FAF1AEFA0548F96ADE8CC /* Pods-App-Promest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-App-Promest.debug.xcconfig"; sourceTree = "<group>"; };
+		AAF1E75C885F37C99263268AC4F37A69 /* Pods-App-NetworkingTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-App-NetworkingTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AD459044F616A6AC90869C2C1C49AE49 /* PromisesObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromisesObjC.xcconfig; sourceTree = "<group>"; };
 		AEB42202DE5722C2AFC1412203D46B1F /* FBLPromise+Validate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Validate.h"; path = "Sources/FBLPromises/include/FBLPromise+Validate.h"; sourceTree = "<group>"; };
+		B4C42907621B9AC5E672D54213D4B058 /* Pods-App-Promest-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-App-Promest-frameworks.sh"; sourceTree = "<group>"; };
+		B7679BD628112EFAAA74C3DABF94FE8D /* Promises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Promises.framework; path = PromisesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB255C71A7512595338866DCEF81AA77 /* Promise+Catch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Catch.swift"; path = "Sources/Promises/Promise+Catch.swift"; sourceTree = "<group>"; };
-		BC4D2717C1BD7F488E072D742D1EC51E /* Pods-App-Networking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-App-Networking.modulemap"; sourceTree = "<group>"; };
-		BC914B574E942BD2A37AC93AAA51B5F9 /* Pods-App-Networking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-App-Networking-dummy.m"; sourceTree = "<group>"; };
 		BCBDA93C4147B23FD053D46BD85E4B07 /* FBLPromise+Catch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Catch.h"; path = "Sources/FBLPromises/include/FBLPromise+Catch.h"; sourceTree = "<group>"; };
 		BD4F71A58DF6411C254646DE1566F96E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		BD823AFD550410DDF3B3C2A346BE182B /* PromisesSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromisesSwift-dummy.m"; sourceTree = "<group>"; };
-		BDDCE9441C0EE2909D253A3192040A89 /* Pods-App-Networking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-App-Networking.debug.xcconfig"; sourceTree = "<group>"; };
 		BE86288AE2F55BE99ECB62D92EFDB280 /* Promise+Validate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Validate.swift"; path = "Sources/Promises/Promise+Validate.swift"; sourceTree = "<group>"; };
+		BEA9383DC791A003745D5219F558D15D /* Pods-App-Promest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-App-Promest-acknowledgements.plist"; sourceTree = "<group>"; };
+		C0BB7B70542982CB971749919C691350 /* Pods-App-NetworkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-App-NetworkingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C38FCEB7E89E70165698B56F28DDA1C3 /* FBLPromise+Async.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Async.h"; path = "Sources/FBLPromises/include/FBLPromise+Async.h"; sourceTree = "<group>"; };
 		C6FD9841782EA72C20AE6AD3632EE10A /* FBLPromise+When.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+When.h"; path = "Sources/FBLPromises/include/FBLPromise+When.h"; sourceTree = "<group>"; };
 		C74A65631D4D8236C42426D329B9A276 /* FBLPromise+Recover.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Recover.h"; path = "Sources/FBLPromises/include/FBLPromise+Recover.h"; sourceTree = "<group>"; };
+		C95F234FBC2B93879CCDEA8564BAC838 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC9C848422D0FA5771321E9FB3F272CF /* FBLPromise+Resolve.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Resolve.m"; path = "Sources/FBLPromises/FBLPromise+Resolve.m"; sourceTree = "<group>"; };
+		D298D2B0ABC6C977468AFBD4D7A45DA2 /* Pods-App-Promest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-App-Promest-resources.sh"; sourceTree = "<group>"; };
 		D447DB8CAA6F2F4F2102F76BD7CA9406 /* FBLPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBLPromise.m; path = Sources/FBLPromises/FBLPromise.m; sourceTree = "<group>"; };
 		D75D550B393B84825940B2689A728740 /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D80F1850FD42E6000A6A6818101AB1E0 /* Pods-App-Promest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-App-Promest.release.xcconfig"; sourceTree = "<group>"; };
 		D8A70FEAF57464B10E940BDF4E3AA401 /* FBLPromise+Do.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Do.m"; path = "Sources/FBLPromises/FBLPromise+Do.m"; sourceTree = "<group>"; };
 		DC3B014D7C62E1794FF8C9138F3F1D62 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC7DA537856E4482293A1E704352A9B4 /* Pods-App-Networking-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-App-Networking-resources.sh"; sourceTree = "<group>"; };
 		DCB5E4807C588AF50FE6542C8F478222 /* Promise+Then.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Then.swift"; path = "Sources/Promises/Promise+Then.swift"; sourceTree = "<group>"; };
 		DF7E93CDB53D3FE00B36CAE4FB729B10 /* FBLPromiseError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromiseError.h; path = Sources/FBLPromises/include/FBLPromiseError.h; sourceTree = "<group>"; };
+		DFED3F0147418F4B7B34F82986979128 /* Pods-App-Networking-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-App-Networking-acknowledgements.plist"; sourceTree = "<group>"; };
 		E073809FBEFEC8E9F641DF1F99B93C32 /* FBLPromise+Validate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Validate.m"; path = "Sources/FBLPromises/FBLPromise+Validate.m"; sourceTree = "<group>"; };
-		E187A1C1D49CEE90E785CA77B7A68C83 /* Pods-App-Networking-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-App-Networking-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E76AB834F75521BB483A5EC199369C26 /* PromiseError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PromiseError.swift; path = Sources/Promises/PromiseError.swift; sourceTree = "<group>"; };
+		E990110622937473869787053D70B061 /* Pods-App-Promest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-App-Promest-umbrella.h"; sourceTree = "<group>"; };
 		EE51C156F6EA8EA77BDCE7F953ED7474 /* Promise+Always.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Always.swift"; path = "Sources/Promises/Promise+Always.swift"; sourceTree = "<group>"; };
-		EFD4A028B6F1694D96744ADCADE701CE /* Pods-App-Networking-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-App-Networking-acknowledgements.plist"; sourceTree = "<group>"; };
-		F2FCAD39B89C9946694559AFEA16BCEB /* Pods-App-Promest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-App-Promest-acknowledgements.plist"; sourceTree = "<group>"; };
+		F1036B59AB5DC028F9C0D3F76DD3B26E /* Pods_App_Promest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_App_Promest.framework; path = "Pods-App-Promest.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F409CA16088E1C28497D517819607E31 /* Promise+Resolve.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Resolve.swift"; path = "Sources/Promises/Promise+Resolve.swift"; sourceTree = "<group>"; };
+		FBE56C8900466B90A0AAF750AF0BCBA4 /* Pods-App-Networking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-App-Networking-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +285,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				09830901CDB77ABD5D09F67AFB04BC09 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3777EA7E96E52B3E9E97BB5B4D5004C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEA251045AACECE1BDD4BB3568FC6DFD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,22 +333,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		163286BDE8CFD3AB2F8F17F830EF9046 /* Pods-App-Promest */ = {
+		1C2C3F308BFB1740EDEFCD28AF1DBC97 /* Pods-App-NetworkingTests */ = {
 			isa = PBXGroup;
 			children = (
-				A6BFE201D0E45C598EF322BBF9F281D9 /* Info.plist */,
-				3BC9078273D24AE46E5BD3E3148EE356 /* Pods-App-Promest.modulemap */,
-				75039E355E476B0C8D27A7EC1F867BE5 /* Pods-App-Promest-acknowledgements.markdown */,
-				F2FCAD39B89C9946694559AFEA16BCEB /* Pods-App-Promest-acknowledgements.plist */,
-				7557ADAC87ADA1319399079B2EDEE984 /* Pods-App-Promest-dummy.m */,
-				621EF34313F75DF4725DCE27EA271541 /* Pods-App-Promest-frameworks.sh */,
-				992B8E9F450E3EFB62C7E7F0F2140531 /* Pods-App-Promest-resources.sh */,
-				3E131E3D55789C64B2F78B39AEEED943 /* Pods-App-Promest-umbrella.h */,
-				2791580C9C0DF94D9BDA3CD829FCDF7A /* Pods-App-Promest.debug.xcconfig */,
-				D80F1850FD42E6000A6A6818101AB1E0 /* Pods-App-Promest.release.xcconfig */,
+				0ECC8F4337D49E303BADF7DB77930256 /* Info.plist */,
+				760BEED681B0C25D4B69386EA713F010 /* Pods-App-NetworkingTests.modulemap */,
+				458BE301534EA45ACEB584BDCC867973 /* Pods-App-NetworkingTests-acknowledgements.markdown */,
+				AAF1E75C885F37C99263268AC4F37A69 /* Pods-App-NetworkingTests-acknowledgements.plist */,
+				068E68D242158EA54DFABF03958CC891 /* Pods-App-NetworkingTests-dummy.m */,
+				8CC8F164882FDB9A520C1C254873886E /* Pods-App-NetworkingTests-frameworks.sh */,
+				4BAA1C0009445B2C85B9C36630C7F8FF /* Pods-App-NetworkingTests-resources.sh */,
+				8A298FA2ED0B3AE9DA70D0BD65964661 /* Pods-App-NetworkingTests-umbrella.h */,
+				C0BB7B70542982CB971749919C691350 /* Pods-App-NetworkingTests.debug.xcconfig */,
+				16A18D5FB63AD9E458F0711F3FF9A087 /* Pods-App-NetworkingTests.release.xcconfig */,
 			);
-			name = "Pods-App-Promest";
-			path = "Target Support Files/Pods-App-Promest";
+			name = "Pods-App-NetworkingTests";
+			path = "Target Support Files/Pods-App-NetworkingTests";
 			sourceTree = "<group>";
 		};
 		1E8767E7336D5A4F862C2AB8C483AC17 /* PromisesObjC */ = {
@@ -356,24 +392,16 @@
 			path = PromisesObjC;
 			sourceTree = "<group>";
 		};
-		28FEFBA0082128038B339C4605361A0D /* Products */ = {
+		2FBB06BFD54FD4751170FF457752198C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				31F0FF441A11BBF95E347537BE23F65D /* FBLPromises.framework */,
-				22592DB82DE5699E7BD7472175B26CB4 /* Pods_App_Networking.framework */,
-				5A646ECF34A288DC46D27512BEA1ABD1 /* Pods_App_Promest.framework */,
-				021B8975D6B0AB38F57BCFC0FD0B476F /* Promises.framework */,
+				8D1EFE0668C82E2A8B503B12B00B51DB /* FBLPromises.framework */,
+				1906E46DD66E354E5B8AF9B0703A5AAA /* Pods_App_Networking.framework */,
+				56A18BC63EB325C8F6B04F93596B87FF /* Pods_App_NetworkingTests.framework */,
+				F1036B59AB5DC028F9C0D3F76DD3B26E /* Pods_App_Promest.framework */,
+				B7679BD628112EFAAA74C3DABF94FE8D /* Promises.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		471E0439655F56B19EF5520942FC7949 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C9319AEF633890AC6F7F4B38692A869B /* Pods-App-Networking */,
-				163286BDE8CFD3AB2F8F17F830EF9046 /* Pods-App-Promest */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		699D3E6DAEF5311830AA1E17ADDDCC48 /* Support Files */ = {
@@ -420,9 +448,26 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				023CA5F3E731200584448DFAF67C6A3D /* Frameworks */,
 				DA4E1BB94AB4245D56D9550B82079993 /* Pods */,
-				28FEFBA0082128038B339C4605361A0D /* Products */,
-				471E0439655F56B19EF5520942FC7949 /* Targets Support Files */,
+				2FBB06BFD54FD4751170FF457752198C /* Products */,
+				DF6780CC8064A3110FBACA21F3514961 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		B68374D1BAB39276F87F2B458EFFFA7C /* Pods-App-Networking */ = {
+			isa = PBXGroup;
+			children = (
+				48B99F73230CB06BDCA57683CC646D0E /* Info.plist */,
+				4F6D3ADB6A1447019818E60A3D3EB2CC /* Pods-App-Networking.modulemap */,
+				572CDFB22F62D5ECD0B5FD02F4747C19 /* Pods-App-Networking-acknowledgements.markdown */,
+				DFED3F0147418F4B7B34F82986979128 /* Pods-App-Networking-acknowledgements.plist */,
+				FBE56C8900466B90A0AAF750AF0BCBA4 /* Pods-App-Networking-dummy.m */,
+				DC7DA537856E4482293A1E704352A9B4 /* Pods-App-Networking-resources.sh */,
+				998390C936822C8F53C7D51B3A754332 /* Pods-App-Networking-umbrella.h */,
+				1B4472DFDFD6B33CA6E31A9B242E70C9 /* Pods-App-Networking.debug.xcconfig */,
+				81B22002F0C46CBEB7E8C4CBB9C3AD06 /* Pods-App-Networking.release.xcconfig */,
+			);
+			name = "Pods-App-Networking";
+			path = "Target Support Files/Pods-App-Networking";
 			sourceTree = "<group>";
 		};
 		C109C455F4057FBC690F801F956DB160 /* iOS */ = {
@@ -433,21 +478,22 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C9319AEF633890AC6F7F4B38692A869B /* Pods-App-Networking */ = {
+		C6CF42436BE2AF43A13D6014B3D3DD5A /* Pods-App-Promest */ = {
 			isa = PBXGroup;
 			children = (
-				3B7328C881651D867189B01C0ADBE282 /* Info.plist */,
-				BC4D2717C1BD7F488E072D742D1EC51E /* Pods-App-Networking.modulemap */,
-				E187A1C1D49CEE90E785CA77B7A68C83 /* Pods-App-Networking-acknowledgements.markdown */,
-				EFD4A028B6F1694D96744ADCADE701CE /* Pods-App-Networking-acknowledgements.plist */,
-				BC914B574E942BD2A37AC93AAA51B5F9 /* Pods-App-Networking-dummy.m */,
-				58BD7206ACD66A2FE8477D7BE6C19A45 /* Pods-App-Networking-resources.sh */,
-				91B8271F71E658843496C2DD9C595FC4 /* Pods-App-Networking-umbrella.h */,
-				BDDCE9441C0EE2909D253A3192040A89 /* Pods-App-Networking.debug.xcconfig */,
-				95E9C4893CFB1412EC0B4BF5927E416B /* Pods-App-Networking.release.xcconfig */,
+				C95F234FBC2B93879CCDEA8564BAC838 /* Info.plist */,
+				066E3DD143F13126ED374E156845F4E6 /* Pods-App-Promest.modulemap */,
+				662E70741E9305F3DD8592EFEA393D8E /* Pods-App-Promest-acknowledgements.markdown */,
+				BEA9383DC791A003745D5219F558D15D /* Pods-App-Promest-acknowledgements.plist */,
+				0DE959E00E366E8207042710F9EDD861 /* Pods-App-Promest-dummy.m */,
+				B4C42907621B9AC5E672D54213D4B058 /* Pods-App-Promest-frameworks.sh */,
+				D298D2B0ABC6C977468AFBD4D7A45DA2 /* Pods-App-Promest-resources.sh */,
+				E990110622937473869787053D70B061 /* Pods-App-Promest-umbrella.h */,
+				9E902A89452FAF1AEFA0548F96ADE8CC /* Pods-App-Promest.debug.xcconfig */,
+				859964D5AB0D80FE063391184C10F92E /* Pods-App-Promest.release.xcconfig */,
 			);
-			name = "Pods-App-Networking";
-			path = "Target Support Files/Pods-App-Networking";
+			name = "Pods-App-Promest";
+			path = "Target Support Files/Pods-App-Promest";
 			sourceTree = "<group>";
 		};
 		DA4E1BB94AB4245D56D9550B82079993 /* Pods */ = {
@@ -457,6 +503,16 @@
 				795A888D01EF11E4561B27F3E2A79750 /* PromisesSwift */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DF6780CC8064A3110FBACA21F3514961 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B68374D1BAB39276F87F2B458EFFFA7C /* Pods-App-Networking */,
+				1C2C3F308BFB1740EDEFCD28AF1DBC97 /* Pods-App-NetworkingTests */,
+				C6CF42436BE2AF43A13D6014B3D3DD5A /* Pods-App-Promest */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		E3CE3060F8F3B3D976ECE9ADCF0F7878 /* Support Files */ = {
@@ -475,6 +531,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		5E7A533593751334266CF3B2F87411AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA6C36037484147895D1C9597B2AF59 /* Pods-App-NetworkingTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		656A46B05EB4435A63CC94B94A35AD8C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -542,7 +606,26 @@
 			);
 			name = PromisesSwift;
 			productName = PromisesSwift;
-			productReference = 021B8975D6B0AB38F57BCFC0FD0B476F /* Promises.framework */;
+			productReference = B7679BD628112EFAAA74C3DABF94FE8D /* Promises.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		890F5F68CC4C0A0F58C1AC865C0CE00F /* Pods-App-NetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5CFB31F557C58CC4BEA00ACA07550EC /* Build configuration list for PBXNativeTarget "Pods-App-NetworkingTests" */;
+			buildPhases = (
+				B022B0FC2EC212C9A4D1F66873A60C8D /* Sources */,
+				3777EA7E96E52B3E9E97BB5B4D5004C8 /* Frameworks */,
+				5E7A533593751334266CF3B2F87411AA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B74DA714763C70CEB975F1A4C2E956FD /* PBXTargetDependency */,
+				FB37EC9AD56D4530315C32DC4BD660EC /* PBXTargetDependency */,
+			);
+			name = "Pods-App-NetworkingTests";
+			productName = "Pods-App-NetworkingTests";
+			productReference = 56A18BC63EB325C8F6B04F93596B87FF /* Pods_App_NetworkingTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		93D6D1521FB07B52E4B47076C3431591 /* Pods-App-Networking */ = {
@@ -561,7 +644,7 @@
 			);
 			name = "Pods-App-Networking";
 			productName = "Pods-App-Networking";
-			productReference = 22592DB82DE5699E7BD7472175B26CB4 /* Pods_App_Networking.framework */;
+			productReference = 1906E46DD66E354E5B8AF9B0703A5AAA /* Pods_App_Networking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A222D3F54283DB91CD23D30775DCC1CC /* Pods-App-Promest */ = {
@@ -580,7 +663,7 @@
 			);
 			name = "Pods-App-Promest";
 			productName = "Pods-App-Promest";
-			productReference = 5A646ECF34A288DC46D27512BEA1ABD1 /* Pods_App_Promest.framework */;
+			productReference = F1036B59AB5DC028F9C0D3F76DD3B26E /* Pods_App_Promest.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EFAD2EB6CDC42955E43C7CD6F61A409D /* PromisesObjC */ = {
@@ -599,7 +682,7 @@
 			);
 			name = PromisesObjC;
 			productName = PromisesObjC;
-			productReference = 31F0FF441A11BBF95E347537BE23F65D /* FBLPromises.framework */;
+			productReference = 8D1EFE0668C82E2A8B503B12B00B51DB /* FBLPromises.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -619,11 +702,12 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 28FEFBA0082128038B339C4605361A0D /* Products */;
+			productRefGroup = 2FBB06BFD54FD4751170FF457752198C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				93D6D1521FB07B52E4B47076C3431591 /* Pods-App-Networking */,
+				890F5F68CC4C0A0F58C1AC865C0CE00F /* Pods-App-NetworkingTests */,
 				A222D3F54283DB91CD23D30775DCC1CC /* Pods-App-Promest */,
 				EFAD2EB6CDC42955E43C7CD6F61A409D /* PromisesObjC */,
 				1CF768D8CC6AAC8A598F9392CD0CE5C7 /* PromisesSwift */,
@@ -694,6 +778,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B022B0FC2EC212C9A4D1F66873A60C8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2641D623EBF3428C62F6E4EFDE24187 /* Pods-App-NetworkingTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -715,6 +807,12 @@
 			target = 1CF768D8CC6AAC8A598F9392CD0CE5C7 /* PromisesSwift */;
 			targetProxy = 933783ADE7834F60392D2F4947981520 /* PBXContainerItemProxy */;
 		};
+		B74DA714763C70CEB975F1A4C2E956FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromisesObjC;
+			target = EFAD2EB6CDC42955E43C7CD6F61A409D /* PromisesObjC */;
+			targetProxy = 39656BDFD50B91D9BCDEB201562C55BF /* PBXContainerItemProxy */;
+		};
 		F07835A0AB56CBA39395702A01AD0381 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PromisesObjC;
@@ -726,6 +824,12 @@
 			name = PromisesSwift;
 			target = 1CF768D8CC6AAC8A598F9392CD0CE5C7 /* PromisesSwift */;
 			targetProxy = F1355D7BFC7D0CE0D368737F85370A41 /* PBXContainerItemProxy */;
+		};
+		FB37EC9AD56D4530315C32DC4BD660EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromisesSwift;
+			target = 1CF768D8CC6AAC8A598F9392CD0CE5C7 /* PromisesSwift */;
+			targetProxy = EAEC1ED618CFAAAC53CDCBAA31F75AF7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -762,7 +866,7 @@
 		};
 		13FCA5F0A61751675B00D07B13526E3C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D80F1850FD42E6000A6A6818101AB1E0 /* Pods-App-Promest.release.xcconfig */;
+			baseConfigurationReference = 859964D5AB0D80FE063391184C10F92E /* Pods-App-Promest.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -797,7 +901,7 @@
 		};
 		44F3370BD080D698FF33D4EF2621C2FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2791580C9C0DF94D9BDA3CD829FCDF7A /* Pods-App-Promest.debug.xcconfig */;
+			baseConfigurationReference = 9E902A89452FAF1AEFA0548F96ADE8CC /* Pods-App-Promest.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -917,6 +1021,41 @@
 			};
 			name = Debug;
 		};
+		740177A96093C59C6525B76BE8844D8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16A18D5FB63AD9E458F0711F3FF9A087 /* Pods-App-NetworkingTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-App-NetworkingTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-App-NetworkingTests/Pods-App-NetworkingTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_App_NetworkingTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		8A329C6E61B6116799636E9A4F6ED527 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 535818A7D056B791217D034B1B46A802 /* PromisesSwift.xcconfig */;
@@ -980,9 +1119,44 @@
 			};
 			name = Debug;
 		};
+		C3749E13AE1119E5DD876CCDADB8E0B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0BB7B70542982CB971749919C691350 /* Pods-App-NetworkingTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-App-NetworkingTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-App-NetworkingTests/Pods-App-NetworkingTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_App_NetworkingTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		D45507674C5DD6DC4795757E189E6A34 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95E9C4893CFB1412EC0B4BF5927E416B /* Pods-App-Networking.release.xcconfig */;
+			baseConfigurationReference = 81B22002F0C46CBEB7E8C4CBB9C3AD06 /* Pods-App-Networking.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1080,7 +1254,7 @@
 		};
 		EA4C62BBD9E9DADA2FFA9C4A29F2D376 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDDCE9441C0EE2909D253A3192040A89 /* Pods-App-Networking.debug.xcconfig */;
+			baseConfigurationReference = 1B4472DFDFD6B33CA6E31A9B242E70C9 /* Pods-App-Networking.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1148,6 +1322,15 @@
 			buildConfigurations = (
 				B8D166945E17ADED9F1E8860EE554BF7 /* Debug */,
 				8A329C6E61B6116799636E9A4F6ED527 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5CFB31F557C58CC4BEA00ACA07550EC /* Build configuration list for PBXNativeTarget "Pods-App-NetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3749E13AE1119E5DD876CCDADB8E0B3 /* Debug */,
+				740177A96093C59C6525B76BE8844D8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

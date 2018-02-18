@@ -9,4 +9,7 @@ abstract_target 'App' do
 
     target 'Promest'
     target 'Networking'
+
+    # Test targets
+    target 'NetworkingTests'
 end

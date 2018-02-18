@@ -10,7 +10,7 @@ import Foundation
 import Promises
 
 public protocol RESTClientType {
-    var urlSession: URLSession { get }
+    var urlSession: URLSessionType { get }
 
     func request(httpMethod: HTTPMethod, endpoint: Endpoint) -> Promise<Void>
     func request(httpMethod: HTTPMethod, body: Data, endpoint: Endpoint) -> Promise<Void>
