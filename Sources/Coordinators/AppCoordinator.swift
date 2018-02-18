@@ -22,10 +22,11 @@ final class AppCoordinator: Coordinatable {
     weak var delegate: AppCoordinatorDelegate?
 
     init(window: UIWindow) {
-        let client = RESTClient(urlSession: URLSession.shared)
+        let restClient = RESTClient(urlSession: URLSession.shared)
+        let apiClient = IEXAPIClient(restClient: restClient)
         viewController = ViewController()
         presenter = Presenter(
-            interactor: Presenter.Interactor(client: client)
+            interactor: Presenter.Interactor(client: apiClient)
         )
 
         // Wire components together

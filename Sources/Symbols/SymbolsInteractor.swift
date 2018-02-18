@@ -10,9 +10,9 @@ import Promises
 import Networking
 
 final class SymbolsInteractor {
-    let client: RESTClientType
+    let client: IEXAPIClient
 
-    init(client: RESTClientType) {
+    init(client: IEXAPIClient) {
         self.client = client
     }
 
@@ -22,6 +22,6 @@ final class SymbolsInteractor {
     }
     
     func fetchSymbols() -> Promise<[Symbol]> {
-        return client.get(endpoint: IEX.symbols, decodable: [Symbol].self)
+        return client.get(IEX.symbols, decodeResponseTo: [Symbol].self)
     }
 }

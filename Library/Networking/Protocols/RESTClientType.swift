@@ -12,5 +12,10 @@ import Promises
 public protocol RESTClientType {
     var urlSession: URLSession { get }
 
-    func get<T: Decodable>(endpoint: Endpoint, decodable: T.Type) -> Promise<T>
+    func request(httpMethod: HTTPMethod, endpoint: Endpoint) -> Promise<Void>
+    func request(httpMethod: HTTPMethod, body: Data, endpoint: Endpoint) -> Promise<Void>
+    func request<T: Decodable>(httpMethod: HTTPMethod, endpoint: Endpoint,
+                               decodable: T.Type) -> Promise<T>
+    func request<T: Decodable>(httpMethod: HTTPMethod, body: Data, endpoint: Endpoint,
+                               decodable: T.Type) -> Promise<T>
 }

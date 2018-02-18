@@ -37,6 +37,7 @@
 		62DBCB7F20366B4D003CBF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62DBCB7E20366B4D003CBF7E /* Assets.xcassets */; };
 		62DBCB8220366B4D003CBF7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62DBCB8020366B4D003CBF7E /* LaunchScreen.storyboard */; };
 		62DBCB8D20366B4D003CBF7E /* PusherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DBCB8C20366B4D003CBF7E /* PusherTests.swift */; };
+		62F13DCF2039E047005BF0A0 /* IEXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F13DCE2039E047005BF0A0 /* IEXAPIClient.swift */; };
 		95165138CC3C9B8EA84C0C21 /* Pods_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 812CF7FA3B1645DF240F5EB4 /* Pods_Networking.framework */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +124,7 @@
 		62DBCB8C20366B4D003CBF7E /* PusherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusherTests.swift; sourceTree = "<group>"; };
 		62DBCB8E20366B4D003CBF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62E7A87E2038733700503FC9 /* Coder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coder.swift; sourceTree = "<group>"; };
+		62F13DCE2039E047005BF0A0 /* IEXAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IEXAPIClient.swift; sourceTree = "<group>"; };
 		812CF7FA3B1645DF240F5EB4 /* Pods_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89438D91351071F558C74C9D /* Pods_App_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52D430B2B2BDC16FCBD45B4 /* Pods-App-Promest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-Promest.release.xcconfig"; path = "Pods/Target Support Files/Pods-App-Promest/Pods-App-Promest.release.xcconfig"; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 			children = (
 				62585CA12039331A00D26634 /* Contracts */,
 				62585C9520392E6700D26634 /* IEX.swift */,
+				62F13DCE2039E047005BF0A0 /* IEXAPIClient.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -661,6 +664,7 @@
 				62585CA82039332900D26634 /* Symbol.swift in Sources */,
 				62585C9D203931FD00D26634 /* SymbolsTableViewController.swift in Sources */,
 				62585CA92039332900D26634 /* Company.swift in Sources */,
+				62F13DCF2039E047005BF0A0 /* IEXAPIClient.swift in Sources */,
 				62585CB920393DA000D26634 /* Coordinatable.swift in Sources */,
 				62585CB120393ACE00D26634 /* SymbolsInteractor.swift in Sources */,
 				62585CB720393C9000D26634 /* SymbolsPresenter.swift in Sources */,

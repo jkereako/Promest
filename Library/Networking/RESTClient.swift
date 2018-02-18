@@ -13,17 +13,60 @@ import Promises
 public final class RESTClient: RESTClientType {
     public let urlSession: URLSession
 
+    fileprivate let headers: [String: String]
+
     // Allow for dependency injection to make the class testable
-    public init(urlSession: URLSession) {
+    public init(urlSession: URLSession, headers: [String: String] = [:]) {
         self.urlSession = urlSession
+        self.headers = headers
     }
 
-    public func get<T: Decodable>(endpoint: Endpoint, decodable: T.Type) -> Promise<T> {
-        let resource = Resource(
-            endpoint: endpoint, httpMethod: .get, body: nil, headers: [:]
-        )
+    public func request(httpMethod: HTTPMethod, endpoint: Endpoint) -> Promise<Void> {
+        let resource = buildResourceWithEndpoint(endpoint, httpMethod: httpMethod, body: nil)
+
+        return sendRequestIgnoringResponse(resource)
+    }
+
+    public func request(httpMethod: HTTPMethod, body: Data, endpoint: Endpoint) -> Promise<Void> {
+        let resource = buildResourceWithEndpoint(endpoint, httpMethod: httpMethod, body: body)
+
+        return sendRequestIgnoringResponse(resource)
+    }
+
+     public func request<T: Decodable>(httpMethod: HTTPMethod, endpoint: Endpoint, decodable: T.Type) -> Promise<T> {
+        let resource = buildResourceWithEndpoint(endpoint, httpMethod: httpMethod, body: nil)
 
         // Send the request and then attempt to decode the JSON object
+        return sendRequestDecodingResponse(resource, decodable: decodable.self)
+    }
+
+    public func request<T: Decodable>(httpMethod: HTTPMethod, body: Data, endpoint: Endpoint,
+                               decodable: T.Type) -> Promise<T> {
+
+        let resource = buildResourceWithEndpoint(endpoint, httpMethod: httpMethod, body: body)
+
+        // Send the request and then attempt to decode the JSON object
+        return sendRequestDecodingResponse(resource, decodable: decodable.self)
+    }
+}
+
+// MARK: - Private helpers
+private extension RESTClient {
+    func buildResourceWithEndpoint(_ endpoint: Endpoint, httpMethod: HTTPMethod, body: Data?)
+        -> Resource {
+            return Resource(
+                endpoint: endpoint, httpMethod: httpMethod, body: body, headers: self.headers
+            )
+    }
+    func sendRequestIgnoringResponse(_ resource: Resource) -> Promise<Void> {
+        // Implicitly cast `Promise<Data?>` to `Promise<Void>`
+        return sendRequest(resource: resource).then { _ -> Void  in
+            return
+        }
+    }
+
+    func sendRequestDecodingResponse<T: Decodable>(_ resource: Resource,
+                                                   decodable: T.Type) -> Promise<T> {
         return sendRequest(resource: resource).then { (data) in
             guard let responseData = data else {
                 throw NetworkError.emptyResponse
@@ -32,10 +75,7 @@ public final class RESTClient: RESTClientType {
             return Coder().decode(responseData, to: T.self)
         }
     }
-}
 
-// MARK: - Private helpers
-private extension RESTClient {
     func sendRequest(resource: Resource) -> Promise<Data?> {
         let url = resource.endpoint.baseURL.appendingPathComponent(resource.endpoint.path)
         let request = NSMutableURLRequest(url: url)
@@ -55,13 +95,13 @@ private extension RESTClient {
                 switch httpResponse.statusCode {
                 // Success!
                 case 200...299:
-                    // `data` may be nil and this is okay if the request was a POST, PUT or DELETE.
-                    // The only time when nil `data` is an error is on a GET request.
                     fulfill(data)
 
                 // Redirection
                 case 300...399:
-                    break
+                    // Not sure what to do here. I broke out redirection status codes in case we
+                    // want to handle these separately in the future.
+                    fulfill(data)
 
                 // Client error
                 case 400...499:
@@ -72,7 +112,9 @@ private extension RESTClient {
                     reject(NetworkError.serverError(httpStatusCode: httpResponse.statusCode))
 
                 default:
-                    break
+                    // This should never happen.
+                    assertionFailure("Unexpected response code.")
+                    reject(NetworkError.unknown)
                 }
             }
 

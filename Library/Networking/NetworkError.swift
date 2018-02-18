@@ -9,9 +9,8 @@
 import Foundation
 
 enum NetworkError: Error {
-    case noData
+    case unknown
     case emptyResponse
-    case redirection(httpStatusCode: Int)
     case clientError(httpStatusCode: Int)
     case serverError(httpStatusCode: Int)
 }
