@@ -6,10 +6,12 @@ use_frameworks!
 
 abstract_target 'App' do
     pod 'PromisesSwift'
-
+    
     target 'Promest'
     target 'Networking'
-
+    
     # Test targets
-    target 'NetworkingTests'
+    target 'NetworkingTests' do
+        inherit! :search_paths
+    end
 end

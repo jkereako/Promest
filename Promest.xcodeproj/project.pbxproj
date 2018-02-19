@@ -602,7 +602,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-App-NetworkingTests/Pods-App-NetworkingTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-NetworkingTests/Pods-NetworkingTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework",
 			);
@@ -613,7 +613,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-NetworkingTests/Pods-App-NetworkingTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkingTests/Pods-NetworkingTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AF028E6DA52146C021075E7A /* [CP] Embed Pods Frameworks */ = {
@@ -662,7 +662,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-App-NetworkingTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-NetworkingTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -699,7 +699,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-NetworkingTests/Pods-App-NetworkingTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkingTests/Pods-NetworkingTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D7F1DD04981EB05B1D394903 /* [CP] Check Pods Manifest.lock */ = {
@@ -884,7 +884,7 @@
 		};
 		62585C84203929CF00D26634 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A380FF9C19A9D711D654544 /* Pods-App-NetworkingTests.debug.xcconfig */;
+			baseConfigurationReference = 89096B5C7BEA3F3B80FB1DE4 /* Pods-NetworkingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -900,7 +900,7 @@
 		};
 		62585C85203929CF00D26634 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3244ACCC78E8DE5F11F805C8 /* Pods-App-NetworkingTests.release.xcconfig */;
+			baseConfigurationReference = E21B1AA0A4CC1685B80BCBAD /* Pods-NetworkingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
