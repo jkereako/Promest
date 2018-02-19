@@ -12,37 +12,20 @@ import Promises
 
 final class CoderTests: XCTestCase {
     private var coder: CoderType!
-    private let jsonFileLoader = JSONFileLoader(fileName: "dogs.json")
+    private var jsonData: Data!
+    private let json = "{\"status\":\"success\",\"message\":[\"Ibizan\",\"afghan\",\"basset\",\"blood\",\"english\",\"walker\"]}"
 
     override func setUp() {
         super.setUp()
 
         coder = Coder()
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+        jsonData = json.data(using: .utf8)!
     }
     
     func testEncoding() {
-
-        let jsonData = jsonFileLoader.load()
-        let mockContract = coder.decode(jsonData, to: MockContract.self).then { contract in
+        _ = coder.decode(jsonData, to: MockContract.self).then { contract in
             XCTAssertGreaterThan(contract.message.count, 1)
-            XCTAssertEqual(contract.status, "success")
-        }
-
-        let predicate = NSPredicate(format: "success == true")
-        let expectation = XCTNSPredicateExpectation(predicate: predicate, object: mockContract)
-
-        let result = wait(for: [expectation], timeout: 1)
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+            XCTAssertNotEqual(contract.status, "success")
         }
     }
     
