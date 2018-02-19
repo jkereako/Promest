@@ -1,14 +1,14 @@
 PODS:
-  - PromisesObjC (1.0.2)
-  - PromisesSwift (1.0.2):
-    - PromisesObjC (= 1.0.2)
+  - PromisesObjC (1.0.3)
+  - PromisesSwift (1.0.3):
+    - PromisesObjC (= 1.0.3)
 
 DEPENDENCIES:
   - PromisesSwift
 
 SPEC CHECKSUMS:
-  PromisesObjC: 5cb99f8b988db9461cd3025cab5cc17752873a5c
-  PromisesSwift: a972cb5ca9780fb7f805e9c2d69e7efd417a0523
+  PromisesObjC: 9b58f509a9dc23d9a3f01b6aeb2cb9416ade3d41
+  PromisesSwift: fec7ae00af032da2ba3172c8a5468ad9bbf83160
 
 PODFILE CHECKSUM: d0de9d345a6c6f808358bb046d6018e24874ed56
 

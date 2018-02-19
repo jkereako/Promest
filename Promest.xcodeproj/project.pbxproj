@@ -42,6 +42,10 @@
 		62F13DD42039FD15005BF0A0 /* URLSessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F13DD22039FCC9005BF0A0 /* URLSessionType.swift */; };
 		62F13DD82039FD89005BF0A0 /* URLSession+URLSessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F13DD62039FD83005BF0A0 /* URLSession+URLSessionType.swift */; };
 		62F13DDA2039FDD1005BF0A0 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F13DD92039FDD1005BF0A0 /* MockURLSession.swift */; };
+		62F13DE1203A4264005BF0A0 /* dogs.json in Resources */ = {isa = PBXBuildFile; fileRef = 62F13DE0203A4264005BF0A0 /* dogs.json */; };
+		62F13DE3203A42A0005BF0A0 /* JSONFileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F13DE2203A42A0005BF0A0 /* JSONFileLoader.swift */; };
+		62F13DE9203A4490005BF0A0 /* CoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F13DDE203A4111005BF0A0 /* CoderTests.swift */; };
+		62F13DEB203A4554005BF0A0 /* MockContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F13DEA203A4554005BF0A0 /* MockContract.swift */; };
 		67E2383671AAE93E303B9C1B /* Pods_App_NetworkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9C8228B3F17205E95915D5 /* Pods_App_NetworkingTests.framework */; };
 		95165138CC3C9B8EA84C0C21 /* Pods_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 812CF7FA3B1645DF240F5EB4 /* Pods_Networking.framework */; };
 		F9C23D75881A72A6DB2C932F /* Pods_NetworkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E347F3B4E7AE2CCC48D227F /* Pods_NetworkingTests.framework */; };
@@ -138,6 +142,10 @@
 		62F13DD22039FCC9005BF0A0 /* URLSessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionType.swift; sourceTree = "<group>"; };
 		62F13DD62039FD83005BF0A0 /* URLSession+URLSessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+URLSessionType.swift"; sourceTree = "<group>"; };
 		62F13DD92039FDD1005BF0A0 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		62F13DDE203A4111005BF0A0 /* CoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoderTests.swift; sourceTree = "<group>"; };
+		62F13DE0203A4264005BF0A0 /* dogs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dogs.json; sourceTree = "<group>"; };
+		62F13DE2203A42A0005BF0A0 /* JSONFileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileLoader.swift; sourceTree = "<group>"; };
+		62F13DEA203A4554005BF0A0 /* MockContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockContract.swift; sourceTree = "<group>"; };
 		812CF7FA3B1645DF240F5EB4 /* Pods_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89096B5C7BEA3F3B80FB1DE4 /* Pods-NetworkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkingTests/Pods-NetworkingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		89438D91351071F558C74C9D /* Pods_App_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,6 +255,10 @@
 				62585C7A203929CF00D26634 /* Info.plist */,
 				62F13DD02039FA15005BF0A0 /* MockRESTClient.swift */,
 				62F13DD92039FDD1005BF0A0 /* MockURLSession.swift */,
+				62F13DDE203A4111005BF0A0 /* CoderTests.swift */,
+				62F13DE0203A4264005BF0A0 /* dogs.json */,
+				62F13DE2203A42A0005BF0A0 /* JSONFileLoader.swift */,
+				62F13DEA203A4554005BF0A0 /* MockContract.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -560,6 +572,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62F13DE1203A4264005BF0A0 /* dogs.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,9 +759,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62F13DE3203A42A0005BF0A0 /* JSONFileLoader.swift in Sources */,
+				62F13DE9203A4490005BF0A0 /* CoderTests.swift in Sources */,
 				62F13DDA2039FDD1005BF0A0 /* MockURLSession.swift in Sources */,
 				62F13DD12039FA15005BF0A0 /* MockRESTClient.swift in Sources */,
 				62585C79203929CF00D26634 /* NetworkingTests.swift in Sources */,
+				62F13DEB203A4554005BF0A0 /* MockContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -872,7 +888,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NetworkingTests/Info.plist;
+				INFOPLIST_FILE = Library/Networking/UnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.NetworkingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -888,7 +904,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NetworkingTests/Info.plist;
+				INFOPLIST_FILE = Library/Networking/UnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.NetworkingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
