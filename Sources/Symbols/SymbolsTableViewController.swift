@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Contracts
 
 protocol SymbolsTableViewControllerDelegate: class {
     func didSelectSymbol(_ symbol: Symbol)
